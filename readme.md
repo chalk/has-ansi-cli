@@ -1,4 +1,4 @@
-# has-ansi-cli [![Build Status](https://travis-ci.org/sindresorhus/has-ansi-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/has-ansi-cli)
+# has-ansi-cli [![Build Status](https://travis-ci.org/chalk/has-ansi-cli.svg?branch=master)](https://travis-ci.org/chalk/has-ansi-cli)
 
 > Check if a string has [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_code)
 
@@ -28,7 +28,7 @@ $ has-ansi --help
 
 ## Related
 
-- [has-ansi](https://github.com/sindresorhus/has-ansi) - API for this module
+- [has-ansi](https://github.com/chalk/has-ansi) - API for this module
 
 
 ## License
