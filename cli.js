@@ -1,23 +1,21 @@
 #!/usr/bin/env node
 'use strict';
-var getStdin = require('get-stdin');
-var meow = require('meow');
-var hasAnsi = require('has-ansi');
+const getStdin = require('get-stdin');
+const meow = require('meow');
+const hasAnsi = require('has-ansi');
 
-var cli = meow({
-	help: [
-		'Usage',
-		'  $ has-ansi <string>',
-		'  $ echo <string> | has-ansi',
-		'',
-		'Example',
-		'  $ ls --color | has-ansi && echo \'has ansi\'',
-		'',
-		'Exits with code 0 if input has ANSI escape codes and 1 if not'
-	]
-});
+const cli = meow(`
+	Usage
+	  $ has-ansi <string>
+	  $ echo <string> | has-ansi
 
-var input = cli.input[0];
+	Example
+	  $ ls --color | has-ansi && echo 'has ansi'
+
+	Exits with code 0 if input has ANSI escape codes and 1 if not
+`);
+
+const input = cli.input[0];
 
 function init(data) {
 	process.exit(hasAnsi(data) ? 0 : 1);
@@ -31,5 +29,5 @@ if (!input && process.stdin.isTTY) {
 if (input) {
 	init(input);
 } else {
-	getStdin(init);
+	getStdin().then(init);
 }

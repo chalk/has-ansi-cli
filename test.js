@@ -1,12 +1,8 @@
-'use strict';
-var test = require('ava');
-var childProcess = require('child_process');
+import {execFile} from 'child_process';
+import test from 'ava';
+import pify from 'pify';
 
-test(function (t) {
-	t.plan(2);
-
-	childProcess.execFile('./cli.js', ['--version'], {cwd: __dirname}, function (err, stdout) {
-		t.assert(!err, err);
-		t.assert(stdout.trim().length > 0);
-	});
+test(async t => {
+	const stdout = await pify(execFile)('./cli.js', ['--version']);
+	t.true(stdout.trim().length > 0);
 });
