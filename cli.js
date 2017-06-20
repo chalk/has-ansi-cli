@@ -6,8 +6,8 @@ const hasAnsi = require('has-ansi');
 
 const cli = meow(`
 	Usage
-	  $ has-ansi <string>
-	  $ echo <string> | has-ansi
+	  $ has-ansi <text>
+	  $ echo <text> | has-ansi
 
 	Example
 	  $ ls --color | has-ansi && echo 'has ansi'

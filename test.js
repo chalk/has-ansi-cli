@@ -1,8 +1,7 @@
-import {execFile} from 'child_process';
 import test from 'ava';
-import pify from 'pify';
+import execa from 'execa';
 
 test(async t => {
-	const stdout = await pify(execFile)('./cli.js', ['--version']);
-	t.true(stdout.trim().length > 0);
+	const {stdout} = await execa('./cli.js', ['--version']);
+	t.true(stdout.length > 0);
 });
