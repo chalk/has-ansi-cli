@@ -49,7 +49,7 @@
 	],
 	"dependencies": {
 		"get-stdin": "^5.0.1",
-		"has-ansi": "^2.0.0",
+		"has-ansi": "^3.0.0",
 		"meow": "^3.7.0"
 	},
 	"devDependencies": {
