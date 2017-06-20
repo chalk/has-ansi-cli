@@ -1,60 +1,60 @@
 {
-	"name": "has-ansi-cli",
-	"version": "2.0.0",
-	"description": "Check if a string has ANSI escape codes",
-	"license": "MIT",
-	"repository": "chalk/has-ansi-cli",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
-	},
-	"bin": {
-		"has-ansi": "cli.js"
-	},
-	"engines": {
-		"node": ">=4"
-	},
-	"scripts": {
-		"test": "xo && ava"
-	},
-	"files": [
-		"cli.js"
-	],
-	"keywords": [
-		"cli-app",
-		"cli",
-		"ansi",
-		"styles",
-		"color",
-		"colour",
-		"colors",
-		"terminal",
-		"console",
-		"string",
-		"tty",
-		"escape",
-		"shell",
-		"xterm",
-		"command-line",
-		"text",
-		"regex",
-		"regexp",
-		"re",
-		"match",
-		"test",
-		"find",
-		"pattern",
-		"has"
-	],
-	"dependencies": {
-		"get-stdin": "^5.0.1",
-		"has-ansi": "^3.0.0",
-		"meow": "^3.7.0"
-	},
-	"devDependencies": {
-		"ava": "*",
-		"execa": "^0.7.0",
-		"xo": "*"
-	}
+  "name": "has-ansi-cli",
+  "version": "3.0.0",
+  "description": "Check if a string has ANSI escape codes",
+  "license": "MIT",
+  "repository": "chalk/has-ansi-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "has-ansi": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "ansi",
+    "styles",
+    "color",
+    "colour",
+    "colors",
+    "terminal",
+    "console",
+    "string",
+    "tty",
+    "escape",
+    "shell",
+    "xterm",
+    "command-line",
+    "text",
+    "regex",
+    "regexp",
+    "re",
+    "match",
+    "test",
+    "find",
+    "pattern",
+    "has"
+  ],
+  "dependencies": {
+    "get-stdin": "^5.0.1",
+    "has-ansi": "^3.0.0",
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.7.0",
+    "xo": "*"
+  }
 }
