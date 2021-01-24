@@ -1,60 +1,62 @@
 {
-  "name": "has-ansi-cli",
-  "version": "3.0.0",
-  "description": "Check if a string has ANSI escape codes",
-  "license": "MIT",
-  "repository": "chalk/has-ansi-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "has-ansi": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "ansi",
-    "styles",
-    "color",
-    "colour",
-    "colors",
-    "terminal",
-    "console",
-    "string",
-    "tty",
-    "escape",
-    "shell",
-    "xterm",
-    "command-line",
-    "text",
-    "regex",
-    "regexp",
-    "re",
-    "match",
-    "test",
-    "find",
-    "pattern",
-    "has"
-  ],
-  "dependencies": {
-    "get-stdin": "^5.0.1",
-    "has-ansi": "^3.0.0",
-    "meow": "^3.7.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.7.0",
-    "xo": "*"
-  }
+	"name": "has-ansi-cli",
+	"version": "3.0.0",
+	"description": "Check if a string has ANSI escape codes",
+	"license": "MIT",
+	"repository": "chalk/has-ansi-cli",
+	"funding": "https://github.com/chalk/has-ansi-cli?sponsor=1",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"bin": {
+		"has-ansi": "cli.js"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"ansi",
+		"styles",
+		"color",
+		"colour",
+		"colors",
+		"terminal",
+		"console",
+		"string",
+		"tty",
+		"escape",
+		"shell",
+		"xterm",
+		"command-line",
+		"text",
+		"regex",
+		"regexp",
+		"re",
+		"match",
+		"test",
+		"find",
+		"pattern",
+		"has"
+	],
+	"dependencies": {
+		"get-stdin": "^8.0.0",
+		"has-ansi": "^4.0.0",
+		"meow": "^9.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"execa": "^5.0.0",
+		"xo": "^0.37.1"
+	}
 }

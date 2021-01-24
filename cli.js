@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const getStdin = require('get-stdin');
-const meow = require('meow');
-const hasAnsi = require('has-ansi');
+import getStdin from 'get-stdin';
+import meow from 'meow';
+import hasAnsi from 'has-ansi';
 
 const cli = meow(`
 	Usage
@@ -26,8 +25,10 @@ if (!input && process.stdin.isTTY) {
 	process.exit(2);
 }
 
-if (input) {
-	init(input);
-} else {
-	getStdin().then(init);
-}
+(async () => {
+	if (input) {
+		init(input);
+	} else {
+		init(await getStdin());
+	}
+})();
