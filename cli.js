@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import process from 'node:process';
 import getStdin from 'get-stdin';
 import meow from 'meow';
 import hasAnsi from 'has-ansi';
@@ -12,7 +13,9 @@ const cli = meow(`
 	  $ ls --color | has-ansi && echo 'has ansi'
 
 	Exits with code 0 if input has ANSI escape codes and 1 if not
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 
